@@ -1,0 +1,81 @@
+/*
+___________
+reset
+___________
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color:#0084fd;
+    --first-color-light:#b5ddff;
+    --secondary-color:#9792e4;   
+}
+
+/*
+___________
+common
+___________
+*/
+.flex{
+    display: flex;
+}
+
+.justufy-content-between{
+    justify-content: space-between;
+}
+
+.container{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+.inline-list{
+    display: flex;
+    list-style:none;
+}
+
+.text-white{
+    color: #fff;
+}
+.padding{
+    padding-top: .9375rem;
+    padding-bottom: .625rem;
+}
+/*
+___________
+header
+___________
+*/
+
+header{
+    background-color: var(--first-color);
+}
+
+header .header-menu{
+    display: none;
+}
+
+.fa-bars{
+    font-size: 1.1875rem;
+    line-height: 4.6875rem;
+}
+
+@media screen and (min-width:992px){
+    
+    header .header-menu{
+        display: block;
+    }
+
+    li{
+        margin-right: 1.25rem;
+        line-height: 4.6875rem;
+    }
+
+    header .menu-hamburger{
+        display: none;
+    }
+}
